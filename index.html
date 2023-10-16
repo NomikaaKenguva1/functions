@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function pattern(patt){
+        for(let i=1;i<=patt;i++){
+            let row="";
+            for(let j=1;j<=i;j++){
+                row=row+"*";
+
+            }
+            document.write(row+"<br>");
+        }
+
+       }
+       pattern(10);
+       document.write("<br><br><br>" );
+
+       
+       
+
+       //reverse patt
+       function revpatt(patt){
+        for(let i=patt;i>0;i--){
+            let row="";
+            for(let j=1;j<=i;j++){
+                row=row+"*";
+            }
+            document.write(row+"<br>");
+        }
+        
+       }
+       revpatt(10);
+
+       document.write("<br><br><br>" );
+
+       //12345
+       function number(num){
+        for(let i=1;i<=num;i++){
+            let row="";
+            for(let j=1;j<=i;j++){
+                row=row+j;
+
+            }
+            document.write(row+"<br>");
+        }
+
+       }
+       number(10);
+
+       document.write("<br><br><br>" );
+
+
+       //string reverse
+       function stringrev(str){
+        let string="";
+        for(let i=str.length-1;i>=0;i--)
+        {
+            string=string+str[i];
+        }
+        document.write(string);
+
+        
+       }
+       stringrev("krishna");
+       document.write("<br><br><br>" );
+
+       //palindrome
+       function palindrome(str){
+        let string="";
+        for(let i=str.length-1;i>=0;i--)
+        {
+            string=string+str[i];
+        }
+        if(str==string){
+        document.write("palindrome");
+        }
+        else{
+            document.write(" not palindrome");
+
+        }
+
+        
+       }
+       palindrome("noon");
+       document.write("<br><br><br>" );
+
+       //.length 
+    //    let string="apple"
+    //    let a=0;
+    //    let len=0;
+    //    while(string[a]!="\0"){
+    //     len=len+1;
+    //     a++;
+
+    //    }
+    //    document.write("length is " +len);
+
+
+
+
+
+       
+
+           
+        
+
+        
+    </script>
+</body>
+</html>
